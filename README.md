@@ -1,7 +1,7 @@
 **Note: Solution file available in AuthPractice folder**
 
 **Repo Description**
-##JWT Authentication System with Auth API and Auth Client (Clean Architecture)##
+JWT Authentication System with Auth API and Auth Client (Clean Architecture)
 
 This project implements a JWT-based authentication system using Clean Architecture principles. It consists of two components: an Auth API for user authentication and an Auth Client app. The authentication system is stateless, utilizing JWT (JSON Web Tokens), with the token securely stored in a cookie on the client side for session persistence.
 Key Features:
