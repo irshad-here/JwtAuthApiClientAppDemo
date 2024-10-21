@@ -1,0 +1,40 @@
+﻿@using AuthClient.App.ViewModels
+@model List<OrderViewModel>
+
+@{
+    ViewData["Title"] = "Order List";
+}
+
+<h2> Order List</h2>
+
+@if (Model.Count > 0)
+{
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.OrderId</td>
+                    <td>@order.Product</td>
+                    <td>@order.Quantity</td>
+                    <td>@order.Price</td>
+                </tr>    
+            }
+        </tbody>
+
+    </table>
+
+}
+else
+{
+    <p>No orders found.</p>
+}
